@@ -1,0 +1,33 @@
+body {
+  background-color:#33bbDD;
+  border: 5px dashed black;
+}
+h1 {
+  color:#FFFF00;
+  font-family:helvetica;
+  font-size:100px;
+  text-align:center;
+  text-decoration: underline;
+}
+h4 {
+  color:#006600;
+  font-family:verdana;
+  font-size:20px;
+
+}
+ul {
+  align-items: center;
+}
+
+span {
+  color:#CC0000;
+  font-style:italic;
+  text-decoration-style:dashed;
+}
+
+img {
+
+  border:3px dashed #0033bb;
+  align: center;
+
+}
