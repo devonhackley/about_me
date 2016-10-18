@@ -3,9 +3,10 @@
 alert('Hey there!');
 var userChoice = prompt('Would you like to play a game? Yes or No?');
 console.log('This is the question being asked: ' + userChoice);
-if(userChoice.toLowerCase() ===  'yes'|| userChoice.toLowerCase() === 'y') {
+if(userChoice.toLowerCase() === 'yes' || userChoice.toLowerCase() === 'y') {
 
   var userScore = 0;
+  var totalScore = 0;
   alert('Let\'s start our game!');
   alert('This is a guessing game :)');
   alert('You must answer either yes or no to these questions');
@@ -22,16 +23,50 @@ if(userChoice.toLowerCase() ===  'yes'|| userChoice.toLowerCase() === 'y') {
   var fifthQuestion = 'Can I touch my toes?';
   console.log('The questioned asked was: ' + fifthQuestion);
 
+//Question blocks
   var question1 = prompt(firstQuestion);
   if (question1.toLowerCase() === 'yes' || question1.toLowerCase() === 'y') {
     userScore++;
     alert('That is correct');
+    alert('Your score: ' + userScore );
   } else {
     alert('That was wrong :(');
-
   }
-
-
+  var question2 = prompt(secondQuestion);
+  if (question2.toLowerCase() === 'yes' || question2.toLowerCase() === 'y') {
+    userScore++;
+    alert('That is correct');
+    alert('Your score: ' + userScore );
+  } else {
+    alert('That was wrong :(');
+  }
+  var question3 = prompt(thirdQuestion);
+  if (question3.toLowerCase() === 'yes' || question3.toLowerCase() === 'y') {
+    userScore++;
+    alert('That is correct');
+    alert('Your score: ' + userScore );
+  } else {
+    alert('That was wrong :(');
+  }
+  var question4 = prompt(fourthQuestion);
+  if (question4.toLowerCase() === 'no' || question4.toLowerCase() === 'n') {
+    userScore++;
+    alert('That is correct');
+    alert('Your score: ' + userScore );
+  } else {
+    alert('That was wrong :(');
+  }
+  var question5 = prompt(fifthQuestion);
+  if (question5.toLowerCase() === 'no' || question5.toLowerCase() === 'n') {
+    userScore++;
+    alert('That is correct');
+    alert('Your score: ' + userScore );
+    totalScore = userScore;
+    alert('Total Score:  ' + totalScore);
+  } else {
+    alert('That was wrong :(');
+    alert('Total Score:  ' + totalScore);
+  }
 
 }else {
   alert('You\'e lame :(');

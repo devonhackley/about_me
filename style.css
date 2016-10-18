@@ -1,6 +1,6 @@
 body {
-  background-color:#33bbDD;
-  border: 5px dashed black;
+  background-color:#5555aa;
+
 }
 h1 {
   color:#FFFF00;
@@ -9,14 +9,53 @@ h1 {
   text-align:center;
   text-decoration: underline;
 }
-h4 {
-  color:#006600;
+h5 {
+  color:#ffffff;
   font-family:verdana;
   font-size:20px;
+  text-align:center;
 
 }
-ul {
-  align-items: center;
+div {
+  display:inline-block;
+  width:250px;
+  height:250px;
+  background-color:#00aaaa;
+
+}
+.top{
+  display:block;
+  margin:0 auto 200px;
+  margin-top: 20px;
+  padding-top:10px;
+  padding-bottom: 30px;
+  border:2px dashed white;
+}
+.right {
+  float:left;
+  /*padding-right:50px;*/
+  margin-left:40px;
+  margin-right:10px;
+
+  /*margin-bottom: 50px;
+  margin-left:20px;*/
+
+}
+.left {
+  float:left;
+  /*padding-left:20px;*/
+  margin-left:40px;
+  margin-right: 10px;
+
+  /*margin-bottom: 50px;
+  margin-right:20px;*/
+}
+.middle {
+  float:left;
+  /*padding-left:2px;
+  padding-right: 20px;*/
+  margin-left:40px;
+  margin-right: 10px;
 }
 
 span {
