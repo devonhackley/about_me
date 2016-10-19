@@ -1,7 +1,8 @@
 'use strict';
 
 alert('Hey there!');
-var userChoice = prompt('Would you like to play a game? Yes or No?');
+var userName = prompt('What is your name? ');
+var userChoice = prompt(userName + ' would you like to play a game? Yes or No?');
 console.log('This is the question being asked: ' + userChoice);
 if(userChoice.toLowerCase() === 'yes' || userChoice.toLowerCase() === 'y') {
   //declared variables
@@ -10,7 +11,7 @@ if(userChoice.toLowerCase() === 'yes' || userChoice.toLowerCase() === 'y') {
   var totalScore = 0;
   var userGuess = 0;
   var userTries = 0;
-  var answerArray = ['pepperoni, cheese, bacon'];
+  var answerArray = ['pepperoni', 'cheese', 'bacon'];
 
   //start of the game
   alert('Let\'s start our game!');
@@ -33,7 +34,7 @@ if(userChoice.toLowerCase() === 'yes' || userChoice.toLowerCase() === 'y') {
   var seventhQuestion = 'Can you guess what my favorite topping is?';
   console.log(seventhQuestion);
 
-//Question blocks
+// Question blocks
   var answer1 = prompt(firstQuestion);
   if (answer1.toLowerCase() === 'yes' || answer1.toLowerCase() === 'y') {
     userScore++;
@@ -62,7 +63,7 @@ if(userChoice.toLowerCase() === 'yes' || userChoice.toLowerCase() === 'y') {
   }
   console.log('Asks the user the third question, if correct, score is updated');
   var answer4 = prompt(fourthQuestion);
-  if (answer4.toLowerCase() === 'no' ||answer4.toLowerCase() === 'n') {
+  if (answer4.toLowerCase() === 'no' || answer4.toLowerCase() === 'n') {
     userScore++;
     alert('That is correct');
     alert('Your score: ' + userScore );
@@ -75,11 +76,8 @@ if(userChoice.toLowerCase() === 'yes' || userChoice.toLowerCase() === 'y') {
     userScore++;
     alert('That is correct');
     alert('Your score: ' + userScore );
-    // totalScore = userScore;
-    // alert('Total Score:  ' + totalScore);
   } else {
     alert('That was wrong :(');
-    // alert('Total Score:  ' + totalScore);
   }
   console.log('Asks the user the fifth question, if correct, score is updated');
   while (userGuess <= 4) {
@@ -89,7 +87,7 @@ if(userChoice.toLowerCase() === 'yes' || userChoice.toLowerCase() === 'y') {
       userScore++;
       alert('Your score is : ' + userScore);
       break;
-    } else if (parseInt(answer6) < numStates)  {
+    } else if (parseInt(answer6) < numStates) {
       alert('Sorry too low :( ');
       userGuess++;
     } else if (parseInt(answer6) > numStates) {
@@ -98,22 +96,30 @@ if(userChoice.toLowerCase() === 'yes' || userChoice.toLowerCase() === 'y') {
     } else {
       alert('That wasn\'t a number!');
     }
-
   }
   console.log('Question 6 is contained in a while loop, the user only gets 4 guesses');
   while(userTries <= 6){
     var answer7 = prompt(seventhQuestion);
     userTries++;
+    console.log('answer7: ', answer7);
+    var userCorrect = false;
     for (var i = 0; i < answerArray.length; i++) {
       if(answer7 === answerArray[i]) {
+        console.log('answerArray[i]: ', answerArray[i]);
         alert('That is correct!');
         userScore++;
         alert('Your Score: ' + userScore);
         alert('Possible answers: ' + answerArray);
+        userCorrect = true;
         break;
       }
     }
+    if (userCorrect === true){
+      break;
+    }
   }
+  alert('That\'s it! Awesome Job!');
+  alert(userName + ' you got ' + userScore + ' questions correct! Thanks for playing :) ');
 }else {
   alert('You\'e lame :(');
 }
