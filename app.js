@@ -4,9 +4,10 @@ alert('Hey there!');
 var userChoice = prompt('Would you like to play a game? Yes or No?');
 console.log('This is the question being asked: ' + userChoice);
 if(userChoice.toLowerCase() === 'yes' || userChoice.toLowerCase() === 'y') {
-
+  var numStates = 5;
   var userScore = 0;
   var totalScore = 0;
+  var userGuess = 4;
   alert('Let\'s start our game!');
   alert('This is a guessing game :)');
   alert('You must answer either yes or no to these questions');
@@ -22,6 +23,10 @@ if(userChoice.toLowerCase() === 'yes' || userChoice.toLowerCase() === 'y') {
   console.log('The questioned asked was: ' + fourthQuestion);
   var fifthQuestion = 'Can I touch my toes?';
   console.log('The questioned asked was: ' + fifthQuestion);
+  var sixthQuestion = 'How many states have I visted? Type a number!';
+  console.log(sixthQuestion);
+  var seventhQuestion = 'Can you guess what my favorite topping is?';
+  console.log(seventhQuestion);
 
 //Question blocks
   var question1 = prompt(firstQuestion);
@@ -61,11 +66,19 @@ if(userChoice.toLowerCase() === 'yes' || userChoice.toLowerCase() === 'y') {
     userScore++;
     alert('That is correct');
     alert('Your score: ' + userScore );
-    totalScore = userScore;
-    alert('Total Score:  ' + totalScore);
+    // totalScore = userScore;
+    // alert('Total Score:  ' + totalScore);
   } else {
     alert('That was wrong :(');
-    alert('Total Score:  ' + totalScore);
+    // alert('Total Score:  ' + totalScore);
+  }
+  var question6 = prompt(sixthQuestion);
+  if (question6 === numStates) {
+    alert('That is correct!');
+    userScore++;
+    alert(userScore);
+  } else if (question6 < numStates) {
+    alert('Sorry too low :( ');
   }
 
 }else {
