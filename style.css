@@ -2,12 +2,11 @@ body {
   background-color:#5555aa;
 
 }
-h1 {
-  color:#FFFF00;
-  font-family:helvetica;
-  font-size:100px;
-  text-align:center;
-  text-decoration: underline;
+img{
+  width:250px;
+  height:245px;
+  float:right;
+  margin-left: 200px;
 }
 h5 {
   color:#ffffff;
@@ -21,20 +20,20 @@ div {
   width:250px;
   height:250px;
   background-color:#00aaaa;
-
+  border:2px dashed white;
 }
+
 .top{
   display:block;
-  margin:0 auto 200px;
-  margin-top: 20px;
-  padding-top:10px;
-  padding-bottom: 30px;
-  border:2px dashed white;
+  margin:0 auto 100px;
+  /*margin-top: 20px;*/
+  /*padding-top:10px;*/
+  /*padding-bottom: 30px;*/
 }
 .right {
   float:left;
   /*padding-right:50px;*/
-  margin-left:40px;
+  margin-left:170px;
   margin-right:10px;
 
   /*margin-bottom: 50px;
@@ -44,7 +43,7 @@ div {
 .left {
   float:left;
   /*padding-left:20px;*/
-  margin-left:40px;
+  margin-left:90px;
   margin-right: 10px;
 
   /*margin-bottom: 50px;
@@ -54,8 +53,8 @@ div {
   float:left;
   /*padding-left:2px;
   padding-right: 20px;*/
-  margin-left:40px;
-  margin-right: 10px;
+  margin-left:160px;
+
 }
 
 span {
