@@ -2,10 +2,6 @@ body {
   background-color:#5555aa;
 
 }
-main {
-  width:400px;
-  margin:auto;
-}
 img{
   width:250px;
   height:245px;
@@ -29,9 +25,7 @@ div {
 
 .top{
   display:block;
-  margin:0 auto 300px;
-  border:0;
-  background-color:none;
+  margin:0 auto 100px;
   /*margin-top: 20px;*/
   /*padding-top:10px;*/
   /*padding-bottom: 30px;*/
@@ -70,7 +64,8 @@ span {
 }
 
 img {
-  width:300px;
-  margin:auto;
+
+  border:3px dashed #0033bb;
+  align: center;
 
 }
