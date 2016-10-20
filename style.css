@@ -30,7 +30,6 @@ div {
   margin-bottom: 20px;
 }
 
-
 .top{
   display:block;
   margin:0 auto 300px;
@@ -67,8 +66,10 @@ div {
 
 }
 .bottom {
-  float:left;
-  margin:0 auto 300px;
+  /*margin-top:200px;
+  margin:200 auto 300px;*/
+  margin-top: 700px;
+  padding-bottom:70px;
 }
 
 span {
@@ -84,10 +85,11 @@ img {
   margin:0 auto;
 }
 #games {
+  float:left;
+  margin-bottom: auto;
+  /*margin-top:200px;*/
   font-family:monospace;
-  
 }
-
-ol li {
-
+ol {
+  float:left;
 }
