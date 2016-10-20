@@ -20,18 +20,21 @@ h5 {
 
 }
 div {
-  display:inline-block;
+  margin:auto;
   width:250px;
   height:250px;
   background-color:#00aaaa;
   border:2px dashed white;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-bottom: 20px;
 }
 
 .top{
   display:block;
   margin:0 auto 300px;
-  border:0;
-  background-color:none;
+  border:none;
+  background-color:#5555aa;
   /*margin-top: 20px;*/
   /*padding-top:10px;*/
   /*padding-bottom: 30px;*/
@@ -39,7 +42,7 @@ div {
 .right {
   float:left;
   /*padding-right:50px;*/
-  margin-left:170px;
+  margin-left:160px;
   margin-right:10px;
 
   /*margin-bottom: 50px;
@@ -59,8 +62,14 @@ div {
   float:left;
   /*padding-left:2px;
   padding-right: 20px;*/
-  margin-left:160px;
+  margin-left:150px;
 
+}
+.bottom {
+  /*margin-top:200px;
+  margin:200 auto 300px;*/
+  margin-top: 700px;
+  padding-bottom:70px;
 }
 
 span {
@@ -70,7 +79,17 @@ span {
 }
 
 img {
-  width:300px;
-  margin:auto;
-
+  float:left;
+  width:auto;
+  height:auto;
+  margin:0 auto;
+}
+#games {
+  float:left;
+  margin-bottom: auto;
+  /*margin-top:200px;*/
+  font-family:monospace;
+}
+ol {
+  float:left;
 }
