@@ -40,18 +40,19 @@ function consolePrint(idx) {
 }
 // function that decides if the user is right or wrong
 function userAnswer(answer, correct, wrong) {
-  if (correct.indexof(answer.toLowerCase()) !== -1) {
+  if (correct.indexOf(answer.toLowerCase()) !== -1) {
     userScore++;
     alert('That is correct');
     alert('Your score: ' + userScore );
-  } else if (wrong.indexof(answer.toLowerCase()) !== -1) {
+  } else if (wrong.indexOf(answer.toLowerCase()) !== -1) {
     alert('That was wrong :(');
   }else{
     alert('Bad Input!');
   }
 }
-function sixAnswer(answer) {
+function sixAnswer() {
   while (userGuess <= 4) {
+    var answer = prompt(sixthQuestion);
     if(parseInt(answer) === numStates) {
       alert('That is correct!');
       userScore++;
@@ -105,10 +106,10 @@ if(userChoice.toLowerCase() === 'yes' || userChoice.toLowerCase() === 'y') {
   userAnswer(answer4, ['no', 'n'],['yes', 'y']);
   consolePrint(3);
   var answer5 = prompt(fifthQuestion);
-  userAnswer(answer5 ['no', 'n'], ['yes', 'y']);
+  userAnswer(answer5, ['no', 'n'], ['yes', 'y']);
   consolePrint(4);
-  var answer6 = prompt(sixthQuestion);
-  sixAnswer(answer6);
+  // var answer6 = prompt(sixthQuestion);
+  sixAnswer();
   consolePrint(5);
   var answer7 = prompt(seventhQuestion);
   sevenAnswer(answer7);
