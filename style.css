@@ -23,11 +23,19 @@ div {
   margin:auto;
   width:250px;
   height:250px;
-  background-color:#00aaaa;
+  background-color:rgba(255,255,255,0.9);
+  padding-top:2%;
+  padding-bottom: 2%;
   border:2px dashed white;
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
   margin-bottom: 20px;
+}
+div.half {
+  background: rgba(51,55,69,0.9);
+    position:relative;
+    margin-right: 200px;
+    width: 100%;
 }
 
 .top{
@@ -44,6 +52,8 @@ div {
   /*padding-right:50px;*/
   margin-left:160px;
   margin-right:10px;
+  padding-top:0%;
+  padding-bottom:0%;
 
   /*margin-bottom: 50px;
   margin-left:20px;*/
@@ -53,7 +63,9 @@ div {
   float:left;
   /*padding-left:20px;*/
   margin-left:90px;
-  margin-right: 10px;
+  margin-right: 30px;
+  padding-top:0%;
+  padding-bottom:0%;
 
   /*margin-bottom: 50px;
   margin-right:20px;*/
@@ -63,13 +75,16 @@ div {
   /*padding-left:2px;
   padding-right: 20px;*/
   margin-left:150px;
+  padding-top:0%;
+  padding-bottom:0%;
 
 }
 .bottom {
   /*margin-top:200px;
   margin:200 auto 300px;*/
-  margin-top: 700px;
+  margin-top: 300px;
   padding-bottom:70px;
+
 }
 
 span {
