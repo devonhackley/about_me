@@ -14,8 +14,7 @@ if(userChoice.toLowerCase() === 'yes' || userChoice.toLowerCase() === 'y') {
   var answerArray = ['pepperoni', 'cheese', 'bacon'];
 
   //start of the game
-  alert('Let\'s start our game!');
-  alert('This is a guessing game :)');
+  alert('Let\'s start our game! This is a guessing game :)');
   alert('You must answer either yes or no to some of these questions and enter your answer for others!');
 
   //These are my question that I ask the user
@@ -80,7 +79,7 @@ if(userChoice.toLowerCase() === 'yes' || userChoice.toLowerCase() === 'y') {
     alert('That was wrong :(');
   }
   console.log('Asks the user the fifth question, if correct, score is updated');
-  while (userGuess <= 4) {
+  while (userGuess < 4) {
     var answer6 = prompt(sixthQuestion);
     if (parseInt(answer6) === numStates) {
       alert('That is correct!');
@@ -98,6 +97,7 @@ if(userChoice.toLowerCase() === 'yes' || userChoice.toLowerCase() === 'y') {
     }
   }
   console.log('Question 6 is contained in a while loop, the user only gets 4 guesses');
+
   while(userTries <= 6){
     var answer7 = prompt(seventhQuestion);
     userTries++;
@@ -112,6 +112,10 @@ if(userChoice.toLowerCase() === 'yes' || userChoice.toLowerCase() === 'y') {
         alert('Possible answers: ' + answerArray);
         userCorrect = true;
         break;
+      }
+      else {
+        alert('That is not correct');
+        prompt(seventhQuestion);
       }
     }
     if (userCorrect === true){
